@@ -1,0 +1,507 @@
+html, body
+{      
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: url(Pictures/Background1.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+.okvir
+{
+    width: 1024px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.Mreza
+{
+    margin: 0 auto;
+    float: left;
+    overflow: auto;
+    position: absolute;
+    top:  150px;
+    left: 50px;
+    width:  50px;
+}
+
+#SlikaFb
+{
+    height: 30px;
+}
+
+
+.zaglavlje
+{
+    width: 100%;
+    float: none;
+    overflow: auto;
+}
+
+.Meni
+{
+    float: left;
+    width: 88%;
+    margin: 0;
+    margin-left: 6%;
+    padding: 0;
+    
+}
+
+.Meni ul
+{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.Meni li
+{
+
+    color: rgba(250,250,250,1);
+    background: rgba(232, 232, 232,0.15);
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    
+    
+    text-align:  center;
+    vertical-align: middle;
+    line-height: 35px;
+    
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 125px;
+}
+
+.Meni ul > li > a:link,
+.Meni ul > li > a:visited
+{
+    display: inline-block;
+	text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.Meni ul > li a:hover
+{
+    font-size: 15pt;
+    font-weight: 700;
+}
+
+.Logotip
+{
+    margin: 0 auto;
+    float: left;
+    overflow: auto;
+    position: absolute;
+    top:  0px;
+    left: 115px;
+    width:  150px;
+}
+
+.Logotip img
+{
+    position: absolute;
+    left: 10px;
+}
+
+.Logotip h3
+{
+    text-align: center;
+    vertical-align: bottom;
+    color: rgba(250,250,250,1);
+    font-weight: 300;
+    margin-top: 55px;
+}
+
+.GlavniDio
+{
+    position: relative;
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    /*
+    color: rgba(250,250,250,1);
+    background:rgba(232, 232, 232,0.15);
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    */
+}
+
+.DesniDio
+{
+    float: left;
+    width: 27%;
+}
+
+
+.Kontakt
+{
+    margin: 0 auto;
+    overflow: auto;
+    background:rgba(232, 232, 232,0.2);
+    
+    color: rgba(250,250,250,1);
+    padding-left: 40px;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    border: 1px solid;
+}
+
+.Kontakt > h3
+{
+    text-align: center;
+}
+
+.SlikaLocation
+{
+    float: left;
+    margin-left: -27px;
+    margin-top: -42px;
+}
+
+.SlikaTelefon
+{
+    float: left;
+    margin-left: -27px;
+    margin-top: -42px;
+}
+
+.SlikaRadnoVrijeme
+{
+    float: left;
+    margin-left: -27px;
+    margin-top: -32px;
+}
+
+.SlikaMail
+{
+    float: left;
+    margin-left: -27px;
+    margin-top: -32px;
+}
+
+
+.Mapa
+{
+    margin: 0 auto;
+    margin-top: 25px;
+    overflow: auto;
+    background:rgba(232, 232, 232,0.2);
+    
+    color: rgba(250,250,250,1);
+    padding-left: 6px;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    border: 1px solid;
+}
+
+.Mapa > h3
+{
+    text-align: center;
+}
+
+.Mapa img
+{
+    height: 200px;
+    width: 260px;
+}
+
+
+.SredinaDio
+{
+    margin: 0 auto;
+    margin-left: 300px;
+    overflow: auto;
+    
+    background:rgba(232, 232, 232,0.2);
+    
+    color: rgba(250,250,250,1);
+    padding-left: 6px;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    border: 1px solid;
+}
+
+.DonjiDio
+{
+    float: none;
+    position: relative;
+    margin: 0;
+    margin-top: 65px;
+    padding: 0;
+    background:rgba(232, 232, 232,0.2);
+    color: rgba(250,250,250,1);
+    padding-left: 6px;
+    text-align: center;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    border: 1px solid;
+    
+}
+
+.Clanak
+{
+    overflow: auto;
+    
+    position: relative;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    background:rgba(22, 22, 25,0.6);
+    color: rgba(250,250,250,1);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    
+    
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    border: 1px solid;
+}
+
+.Clanak img
+{
+    width:  auto;
+    
+    height: 40%;
+    margin: 5px;
+    float: left;
+    margin-top: 20px;    
+}
+
+.Clanak p
+{
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.Clanak a
+{
+    float: right;
+    text-decoration: none;
+    color: #ff004e;
+    margin-bottom: 5px;
+}
+
+.Clanak a:hover
+{
+    color: #fff;
+}
+
+.Clanak h6
+{
+    font-weight: 300;
+    font-size: 9pt;
+    float: right;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*About dio*/
+
+.Clanak_about
+{
+    overflow: auto;
+    
+    position: relative;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    background:rgba(22, 22, 25,0.6);
+    color: rgba(250,250,250,1);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    
+    
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    border: 1px solid;
+}
+
+.Clanak_about img
+{
+    width:  30%;
+    
+    height: 30%;
+    margin: 5px;
+    float: left;
+    
+}
+
+.Clanak_about p
+{
+    text-align: justify;
+}
+
+
+.Partneri_about ul
+{
+    list-style-image: url(Pictures/arrow_right.png);
+    
+    
+}
+
+.Partneri_about
+{
+    margin: 0 auto;
+    margin-top: 25px;
+    overflow: auto;
+    background:rgba(232, 232, 232,0.2);
+    
+    color: rgba(250,250,250,1);
+    padding-left: 6px;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    border: 1px solid;
+}
+
+.Partneri_about > h3
+{
+    text-align: center;
+}
+
+.Partneri_about ul > li > a:link,
+.Partneri_about ul > li > a:visited
+{
+    display: inline-block;
+	text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+
+
+
+
+
+
+/*Kontakt dio*/
+
+.SredinaDio #naslov_about
+{
+    padding-left: 20px;
+    line-height: 10px;
+}
+
+.KontaktForma
+{
+    float: left;
+    padding: 20px;
+    padding-top: 0px;
+    padding-right: 60px;
+    
+    margin-left: 40px;
+    
+    background:rgba(22, 22, 25,0.6);
+    color: rgba(250,250,250,1);
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.PitanjeForma
+{
+    float: right;
+    padding: 20px;
+    padding-top: 0px;
+    padding-right: 60px;
+    
+    margin-right: 80px;
+    margin-bottom: 20px;    
+    
+    background:rgba(22, 22, 25,0.6);
+    color: rgba(250,250,250,1);
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+
+
+
+/*Tehnički pregled*/
+
+.TehnickiPregledDio
+{
+    padding: 10pt;
+    margin: 20pt;
+    
+    background:rgba(22, 22, 25,0.6);
+    color: rgba(250,250,250,1);
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.PregledTabela 
+{
+    border: 2px solid white;
+}
+
+table, tr, td
+{    
+    color: rgba(232, 232, 232,1);
+    text-align: center;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
