@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/x-icon" href="Pictures/icon.png">
     <META http-equiv="content-type" content="text/html;charset=utf-8">
 </HEAD>
-    <BODY>
+    <BODY  id="tehpregled">
         <div class="Okvir">
             <div class="Mreza">
             <!--Dio za ikone društvenih mreža-->
@@ -29,15 +29,27 @@
                 <div class="Meni">
                 <!--Ovdje ce doci meni ul i li-->
                     <ul>
-                        <li><a href="index.html">Početna</a></li>
-                        <li><a href="servis.html">Servis</a></li>
-                        <li><a href="tehpregled.html">Teh. pregled</a></li>
-                        <li><a href="popravke.html">Popravke</a></li>
-                        <li><a href="prodaja.html">Prodaja</a></li>
-                        <li><a href="about.html">O nama</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li id="pocetna"><a href="index.html" target="a"><img src="Pictures/home.png" alt="Google plus"><br>Početna</a></li>
+
+                        <li id="servis_li"><a href="#" onclick="prikazipodmeni(this)">Servisi</a>
+
+                            <ul id="podmeni">
+                                <li><a href="tehpregled.html">Teh. pregled</a></li>
+                                <li><a href="popravke.html">Popravke</a></li>
+                                <li><a href="Servis.html">Popravke</a></li>
+                            </ul>
+                            
+                        </li>
+
+                        
+                        
+                        <li id="prodaja"><a href="prodaja.html">Prodaja</a></li>
+                        <li id="onama"><a href="about.html">O nama</a></li>
+                        <li id="kontakt"><a href="kontakt.html">Kontakt</a></li>
                     </ul>
-                </div>   
+                </div>  
+
+            </div>
 
             </div>
             
@@ -66,9 +78,15 @@
                     <div class="Mapa">
                     <!--Kako doci do nas-->
                     <h2>Kako doći do nas?</h2>
-                        <p>Nas je naći lako, pogledajte kako..</p>
-                        <p>MAPA JE JOŠ U IZRADI, HVALA NA RAZUMJEVANJU!</p>
-                        <img class="SlikaMapa" src="https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAclYICmNX372dv&amp;url=http%3A%2F%2Ffb-ecn.api.tiles.virtualearth.net%2Fapi%2FGetMap.ashx%3Fkey%3DAqSHdMNkhSvgWwMhbqyiqgW1IhMNeV56Gb0WkfgEDm6jSsfX9gDGmlOUEt3i44Jk%26td%3DD1%26h%3D200%26w%3D341%26z%3D15%26b%3Dr%252Cmkt.en-GB%252Cstl.fb%26ppl%3D54%252C%252C43.3531%252C17.7913%26c%3D43.35307678797%252C17.790985107422&amp;jq=100" alt="a">
+                        
+                        <div class="MapaUpute">
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2901.225189222883!2d17.794570999999994!3d43.351400000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b43bdc9a2cf4b%3A0xadbafa9a67c405cf!2sA.O.+Leko!5e0!3m2!1sbs!2sba!4v1427993283220" 
+                            width="310" 
+                            height="200" 
+                            style="border:0"></iframe>
+                        
+                        </div>
                     </div>
 
                 

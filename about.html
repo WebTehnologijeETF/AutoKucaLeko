@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/x-icon" href="Pictures/icon.png">
     <META http-equiv="content-type" content="text/html;charset=utf-8">
 </HEAD>
-    <BODY>
+    <BODY  id="onama">
         <div class="Okvir">
             <div class="Mreza">
             <!--Dio za ikone društvenih mreža-->
@@ -28,15 +28,27 @@
                 <div class="Meni">
                 <!--Ovdje ce doci meni ul i li-->
                     <ul>
-                        <li><a href="index.html">Početna</a></li>
-                        <li><a href="servis.html">Servis</a></li>
-                        <li><a href="tehpregled.html">Teh. pregled</a></li>
-                        <li><a href="popravke.html">Popravke</a></li>
-                        <li><a href="prodaja.html">Prodaja</a></li>
-                        <li><a href="about.html">O nama</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li id="pocetna"><a href="index.html" target="a"><img src="Pictures/home.png" alt="Google plus"><br>Početna</a></li>
+
+                        <li id="servis_li"><a href="#" onclick="prikazipodmeni(this)">Servisi</a>
+
+                            <ul id="podmeni">
+                                <li><a href="tehpregled.html">Teh. pregled</a></li>
+                                <li><a href="popravke.html">Popravke</a></li>
+                                <li><a href="Servis.html">Popravke</a></li>
+                            </ul>
+                            
+                        </li>
+
+                        
+                        
+                        <li id="prodaja"><a href="prodaja.html">Prodaja</a></li>
+                        <li id="onama"><a href="about.html">O nama</a></li>
+                        <li id="kontakt"><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>   
+
+            </div>
 
             </div>
             
@@ -117,7 +129,7 @@
             </div>
                
         </div>
-    
+        <script src="js/DropDownScript.js"></script>
     </BODY>
 
 </HTML>
