@@ -1,7 +1,7 @@
-function ProvjeriJeLiUneseno()
+function ProvjeriJeLiUneseno(mjesto,opcina)
 {
       var forma = document.forms["Forma1"];
-      var unesenoime, unesenoprezime, unesentelefon;
+      var unesenoime, unesenoprezime, unesentelefon, unesenomjesto, unesenaopcina;
 
       if(forma.ime.value =="" ||  forma.ime.value.length<2)
       {
@@ -29,6 +29,32 @@ function ProvjeriJeLiUneseno()
           unesenoprezime = true;
       }
 
+      if(mjesto==false)
+      {
+          forma.mjesto.style.color = "red";
+          forma.mjesto.style.border = "1px solid red";
+          unesenomjesto = false;
+      }
+      else
+      {
+          forma.mjesto.style.border = "1px solid black";
+          forma.mjesto.style.color = "black";
+          unesenomjesto = true;
+      }
+
+      if(opcina== false)
+      {
+          forma.opcina.style.color = "red";
+          forma.opcina.style.border = "1px solid red";
+          unesenaopcina = false;
+      }
+      else
+      {
+          forma.opcina.style.border = "1px solid black";
+          forma.opcina.style.color = "black";
+          unesenaopcina = true;
+      }
+
       var regex = /^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$/gm;
 
       if(forma.telefon.value=="" || forma.telefon.value.length<9 || regex.test(forma.telefon.value)==false)
@@ -45,9 +71,9 @@ function ProvjeriJeLiUneseno()
       }
 
 
-      if (unesenoime == false || unesenoprezime == false || unesentelefon == false) 
+      if (unesenoime == false || unesenoprezime == false || unesentelefon == false || unesenaopcina == false || unesenomjesto == false) 
       {
-          alert("Imate grešaka u unosu, popravite prije nego Vam omogućimo slanje! \nIme mora sadržavati najmanje 2 slova! \nPrezime mora sadržavati najmanje 3 slova! \nTelefon mora biti ispravan!");
+          alert("Imate grešaka u unosu, popravite prije nego Vam omogućimo slanje! \nIme mora sadržavati najmanje 2 slova! \nPrezime mora sadržavati najmanje 3 slova! \nTelefon mora biti ispravan! \nMjesto mora pripadati općini! \nOpćina mora postojati!");
           return false;
       }
       else {

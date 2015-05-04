@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/x-icon" href="Pictures/icon.png">
     <META http-equiv="content-type" content="text/html;charset=utf-8">
 </HEAD>
-    <BODY id="pocetna">
+    <BODY id="pocetna" onload="return prikazi('Novosti.html')">
         <div class="Okvir">
             <div class="Mreza">
             <!--Dio za ikone društvenih mreža-->
@@ -29,23 +29,25 @@
                 <div class="Meni">
                 <!--Ovdje ce doci meni ul i li-->
                     <ul>
-                        <li id="pocetna"><a href="index.html" target="a"><img src="Pictures/home.png" alt="Google plus"><br>Početna</a></li>
+                        <li id="pocetna"><a onclick="return prikazi('Novosti.html')"><img src="Pictures/home.png" alt="Google plus"><br>Početna</a></li>
 
-                        <li id="servis_li"><a href="#" onclick="prikazipodmeni(this)">Servisi</a>
+                        <li id="servis_li"><a onclick="prikazipodmeni(this)">Servisi</a>
 
                             <ul id="podmeni">
-                                <li><a href="tehpregled.html">Teh. pregled</a></li>
-                                <li><a href="popravke.html">Popravke</a></li>
-                                <li><a href="Servis.html">Popravke</a></li>
+                                <li><a onclick="return prikazi('tehpregled.html')">Teh. pregled</a></li>
+                                <li><a onclick="return prikazi('popravke.html')">Popravke</a></li>
                             </ul>
                             
                         </li>
 
                         
                         
+                        <!--
                         <li id="prodaja"><a href="prodaja.html">Prodaja</a></li>
-                        <li id="onama"><a href="about.html">O nama</a></li>
-                        <li id="kontakt"><a href="kontakt.html">Kontakt</a></li>
+                        -->
+                        <li id="prodaja" ><a onclick="return prikazi('prodaja.html')">Prodaja</a></li>
+                        <li id="onama"><a onclick="return prikazi('about.html')">O nama</a></li>
+                        <li id="kontakt"><a onclick="return prikazi('kontakt.html')">Kontakt</a></li>
                     </ul>
                 </div>  
 
@@ -53,106 +55,7 @@
 
             </div>
             
-            <div class="GlavniDio">
-            <!--Dio za vijesti i glavno sto se tiče Auto kuće-->
-                <div class="DesniDio">
-                <!--DesniDio Glavnog dijela-->
-                    <div class="Kontakt">
-                    <!--Dio za kontakt-->
-                        <h2>Kontaktirajte nas</h2>
-
-                        <p>Auto kuća Leko<br><br>Dubrovačka b.b<br>88000 Mostar</p>
-                        <img class="SlikaLocation" src="Pictures/location.png" alt="a">
-
-                        <p>Tel.: ++387 36 333 580<br>Fax.: ++387 36 333 549</p>
-                        <img class="SlikaTelefon" src="Pictures/phone.png" alt="a">
-
-                        <p>Radno vrijeme: 08:00 - 18:00</p>
-                        <img class="SlikaRadnoVrijeme" src="Pictures/lock.png" alt="a">
-
-                        <p>e-mail: info@ao-leko.com</p>
-                        <img class="SlikaMail" src="Pictures/mail.png" alt="a">
-             
-                    </div>
-
-                    <div class="Mapa">
-                    <!--Kako doci do nas-->
-                    <h2>Kako doći do nas?</h2>
-                        
-                        <div class="MapaUpute">
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2901.225189222883!2d17.794570999999994!3d43.351400000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b43bdc9a2cf4b%3A0xadbafa9a67c405cf!2sA.O.+Leko!5e0!3m2!1sbs!2sba!4v1427993283220" 
-                            width="310" 
-                            height="200" 
-                            style="border:0"></iframe>
-                        
-                        </div>
-                    </div>
-
-                
-                </div>
-
-                <div class="LijeviDio">
-                <!--LijeviDio Glavnog dijela--> 
-                </div>
-
-                <div class="SredinaDio">
-                <!--SrednjiDio Glavnog dijela-->
-                    <h2>Zanimljivosti</h2>
-
-                    <div class="Clanak">
-                        <h6>Mesud Klisura <br> 25.03.2015</h6>
-                        <h3>Audi Exclusive predstavio unikatni RS6 Avant</h3>
-                        
-                        <img src="Articles/AudiExclusive/141230057.1_xl.jpg" alt="Nije se ucitala slika">
-                        <p>Automobil je ofarban u mat sivu boju, dobio je komponente od karbonskih vlakana, a tu su i crni naplaci od legura.
-                            Sportski izgled upotpunjuju sjedišta presvučena crnom kožom, detalji napravljeni od karbonskih vlakana i žuti konac.
-                            Audi RS6 Avant pokreće 4,0-litarski twin-turbo V8 motor koji isporučuje 553 KS uz 700 Nm obrtnog momenta. Uparen je sa osmostepenim tiptronic mjenjačem. Automobil ima quattro pogon na sva četiri točka. Od 0 do 100 km/h ubrzava za 3,9 sekundi, a maksimalna brzina iznosi 305 km/h.</p>
-                        <a href="#">Opširnije..</a>
-                    </div>
-
-                    
-                    <div class="Clanak">
-                        <h6>Mesud Klisura <br> 25.03.2015</h6>
-                        <h3>Lorem ipsum</h3>
-                        <img src="Articles/LoremIpsum/loremipsum.jpeg" alt="Nije se ucitala slika">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium nisi turpis, non placerat est efficitur et. Sed maximus arcu sem, quis mattis justo mollis ac. Donec accumsan turpis sapien, sed tincidunt est tincidunt sit amet. Vestibulum pretium ipsum vitae ligula tincidunt rutrum. Mauris dignissim quis tellus eget vehicula. Morbi nisl nisl, tempus vitae purus sit amet, feugiat commodo metus. Nullam pellentesque sem vel velit faucibus iaculis.</p>
-                        <a href="#">Opširnije..</a>
-                    </div>
-
-
-                    <div class="Clanak">
-                        <h6>Mesud Klisura <br> 25.03.2015</h6>
-                        <h3>Lorem ipsum</h3>
-                        <img src="Articles/LoremIpsum/loremipsum.jpeg" alt="Nije se ucitala slika">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium nisi turpis, non placerat est efficitur et. Sed maximus arcu sem, quis mattis justo mollis ac. Donec accumsan turpis sapien, sed tincidunt est tincidunt sit amet. Vestibulum pretium ipsum vitae ligula tincidunt rutrum. Mauris dignissim quis tellus eget vehicula. Morbi nisl nisl, tempus vitae purus sit amet, feugiat commodo metus. Nullam pellentesque sem vel velit faucibus iaculis.</p>
-                        <a href="#">Opširnije..</a>
-                    </div>
-
-                    <div class="Clanak">
-                        <h6>Mesud Klisura <br> 25.03.2015</h6>
-                        <h3>Lorem ipsum</h3>
-                        <img src="Articles/LoremIpsum/loremipsum.jpeg" alt="Nije se ucitala slika">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium nisi turpis, non placerat est efficitur et. Sed maximus arcu sem, quis mattis justo mollis ac. Donec accumsan turpis sapien, sed tincidunt est tincidunt sit amet. Vestibulum pretium ipsum vitae ligula tincidunt rutrum. Mauris dignissim quis tellus eget vehicula. Morbi nisl nisl, tempus vitae purus sit amet, feugiat commodo metus. Nullam pellentesque sem vel velit faucibus iaculis.</p>
-                        <a href="#">Opširnije..</a>
-                    </div>
-
-                    <div class="Clanak">
-                        <h6>Mesud Klisura <br> 25.03.2015</h6>
-                        <h3>Lorem ipsum</h3>
-                        <img src="Articles/LoremIpsum/loremipsum.jpeg" alt="Nije se ucitala slika">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium nisi turpis, non placerat est efficitur et. Sed maximus arcu sem, quis mattis justo mollis ac. Donec accumsan turpis sapien, sed tincidunt est tincidunt sit amet. Vestibulum pretium ipsum vitae ligula tincidunt rutrum. Mauris dignissim quis tellus eget vehicula. Morbi nisl nisl, tempus vitae purus sit amet, feugiat commodo metus. Nullam pellentesque sem vel velit faucibus iaculis.</p>
-                        <a href="#">Opširnije..</a>
-                    </div>
-
-                    <div class="Clanak">
-                        <h6>Mesud Klisura <br> 25.03.2015</h6>
-                        <h3>Lorem ipsum</h3>
-                        <img src="Articles/LoremIpsum/loremipsum.jpeg" alt="Nije se ucitala slika">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium nisi turpis, non placerat est efficitur et. Sed maximus arcu sem, quis mattis justo mollis ac. Donec accumsan turpis sapien, sed tincidunt est tincidunt sit amet. Vestibulum pretium ipsum vitae ligula tincidunt rutrum. Mauris dignissim quis tellus eget vehicula. Morbi nisl nisl, tempus vitae purus sit amet, feugiat commodo metus. Nullam pellentesque sem vel velit faucibus iaculis.</p>
-                        <a href="#">Opširnije..</a>
-                    </div>
-                </div>
+            <div class="GlavniDio" id="GlavniDio">
             
             </div>
             
@@ -164,6 +67,7 @@
             </div>
                
         </div>
+        <script src="js/AjaxScript.js"></script>
         <script src="js/DropDownScript.js"></script>
     </BODY>
 
