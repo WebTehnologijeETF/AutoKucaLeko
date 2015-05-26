@@ -14,22 +14,6 @@ html, body
     
 }
 
-.AdminLogin
-{
-    overflow: auto;
-    position: absolute;
-    top:  70pt;
-    right: 0pt;
-    width:  320pt;
-    height: 25pt;
-    padding-left: 20pt;
-    margin-top: -16pt;
-    background: black;
-    border-bottom: 4px solid #f7e90c;
-    border-right: 4px solid #f7e90c
-}
-    
-
 .Okvir
 {
     margin: 0 auto;
@@ -52,22 +36,11 @@ html, body
     height: 30px;
 }
 
-#slikakomentara
-{
-    height: 32px;
-    width: 42px;
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-left: -33px;
-    float: right;
-}
-
 
 .Zaglavlje
 {
     background: black;
     border-top: 4px solid #f7e90c;
-    border-right: 4px solid #f7e90c;
     height: 72px;
     margin-bottom: 10pt;
     padding-left: 200pt;

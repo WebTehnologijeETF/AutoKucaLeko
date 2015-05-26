@@ -41,6 +41,7 @@ function prikazi(adresa)
 {
 	var ajax = new XMLHttpRequest();
 	ajax.onreadystatechange = function () {
+	    console.log(ajax.responseText);
 	    if (ajax.readyState == 4 && ajax.status == 200) {
 	        document.getElementById("GlavniDio").innerHTML = ajax.responseText;
 	    }
