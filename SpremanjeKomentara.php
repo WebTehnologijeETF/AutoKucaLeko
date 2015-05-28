@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
+$pdo = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
 
 $sql = "INSERT INTO komentar (id,
             vijest,
