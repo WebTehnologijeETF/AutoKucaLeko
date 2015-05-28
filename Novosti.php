@@ -60,7 +60,7 @@
                         
                         if(isset($_GET['vijest']))
                         {
-    	                    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    	                    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
 	                        /*
                             Spriječen SQL Injection
                             */
@@ -125,7 +125,7 @@
                         }
                         else
                         {
-    	                    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    	                    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
 	                        $veza->exec("set names utf8");
 	                        $rezultat = $veza->query("select id, naslov, tekst, UNIX_TIMESTAMP(vrijeme_vijesti) vrijeme2, autor from vijest order by vrijeme_vijesti desc");
 	                         

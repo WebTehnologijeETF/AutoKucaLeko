@@ -13,7 +13,7 @@ if(isset($_POST['submitLogin']))
         $korisnik=$_POST['korisnickoime'];
         $sifra= $_POST['sifra'];
 
-        $connection = mysql_connect("127.10.214.130", "aklekouser", "password");
+        $connection = mysql_connect("localhost", "aklekouser", "password");
 
         $db = mysql_select_db("db_akleko", $connection);
 

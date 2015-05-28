@@ -28,7 +28,7 @@ if(isset($_POST['submit1']))
 /*Ako se klikne na dugme za brisanje*/
 elseif (isset($_POST['submit2']))
 {
-    $connection = mysql_connect("127.10.214.130", "aklekouser", "password");
+    $connection = mysql_connect("localhost", "aklekouser", "password");
 
     $db = mysql_select_db("db_akleko", $connection);
 
@@ -38,7 +38,7 @@ elseif (isset($_POST['submit2']))
 
     if($rows!=1)
     {
-        $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+        $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
         $sql = "DELETE FROM korisnici WHERE id =  :id";
         $stmt = $veza->prepare($sql);
         $stmt->bindParam(':id', $_POST['id'], PDO::PARAM_INT);   
@@ -48,7 +48,7 @@ elseif (isset($_POST['submit2']))
         echo '</script>';
         
         /*Ponovni ispis (refresh)*/
-        $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+        $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
         $rezultat = $veza->query("select * from korisnici");
 	                         
         if (!$rezultat) {
@@ -83,7 +83,7 @@ elseif (isset($_POST['submit2']))
         echo '</script>'; 
         
         /*ponovni ispis (refresh)*/ 
-        $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+        $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
         $rezultat = $veza->query("select * from korisnici");
 	                         
         if (!$rezultat) {
@@ -129,7 +129,7 @@ else
 {
 
 /*Dio za prikaz korisnika*/    
-    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
     $rezultat = $veza->query("select * from korisnici");
 	                         
     if (!$rezultat) {
@@ -182,7 +182,7 @@ if(isset($_POST['submit4']))
 }
 else if(isset($_POST['submit5']))
 {
-    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
     $sql = "DELETE FROM vijest WHERE id =  :id";
     $stmt = $veza->prepare($sql);
     $stmt->bindParam(':id', $_POST['id'], PDO::PARAM_INT);   
@@ -192,7 +192,7 @@ else if(isset($_POST['submit5']))
     echo '</script>';
 
     /*Ponovni prikaz vijesti*/
-    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
 	$veza->exec("set names utf8");
 	$rezultat = $veza->query("select id, naslov, tekst, UNIX_TIMESTAMP(vrijeme_vijesti) vrijeme2, autor from vijest order by vrijeme_vijesti desc");
 	      
@@ -228,7 +228,7 @@ elseif (isset($_POST['submit6']))
 }
 else
 {
-    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
 	$veza->exec("set names utf8");
 	$rezultat = $veza->query("select id, naslov, tekst, UNIX_TIMESTAMP(vrijeme_vijesti) vrijeme2, autor from vijest order by vrijeme_vijesti desc");
 	                         

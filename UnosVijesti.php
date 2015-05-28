@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit4']))
 {
-    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
     $stmt = $veza->prepare("INSERT INTO vijest (id, naslov, tekst, autor, vrijeme_vijesti) VALUES ('NULL', :atribut1, :atribut2, :atribut3, CURRENT_TIMESTAMP)");
 
     $stmt->bindParam(':atribut1', $_POST['naslov'], PDO::PARAM_STR);

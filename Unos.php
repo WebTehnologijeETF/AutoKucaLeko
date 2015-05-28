@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit4']))
 {
-    $veza = new PDO("mysql:dbname=db_akleko;host=127.10.214.130;charset=utf8", "aklekouser", "password");
+    $veza = new PDO("mysql:dbname=db_akleko;host=localhost;charset=utf8", "aklekouser", "password");
     $stmt = $veza->prepare("INSERT INTO korisnici (id, korisnickoime, sifra, tip, email) VALUES ('NULL', :atribut1, :atribut2, :atribut3, :atribut4)");
 
     $stmt->bindParam(':atribut1', $_POST['ime'], PDO::PARAM_STR, 100);
